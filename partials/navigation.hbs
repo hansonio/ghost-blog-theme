@@ -10,9 +10,25 @@
             </button>
         </div>
         <div class="collapse navbar-collapse navbar-main">
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-left">
                 <li><a href="{{@blog.url}}">Home</a></li>
-                <li><a href="{{@blog.url}}/about">About</a></li>
+                <li><a href="{{@blog.url}}/manifesto">Manifesto</a></li>
+                <li><a href="{{@blog.url}}/asp-net-core">ASP.NET Core</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="fa fa-twitter" href="https://twitter.com/andrewhanson"></a>
+                </li>
+                <li>
+                    <a class="fa fa-facebook" href="https://www.facebook.com/theandrewhanson"></a>
+                </li>
+               
+                <li>
+                    <a class="fa fa-linkedin" href="https://www.linkedin.com/in/andrewhanson"></a>
+                </li>
+                <li >
+                    <a class="fa fa-rss" href="{{@blog.url}}/rss"></a>
+                </li>
             </ul>
         </div>
     </div>

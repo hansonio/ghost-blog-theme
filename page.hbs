@@ -1,21 +1,32 @@
 {{!< default}}
-
+{{#post}}
 {{> header-post}}
-
+{{/post}}
 <div id="main" class="content" role="main">
     <div class="container">
 
         <article class="{{post_class}} page">
+            {{#post}}
             <div class="row">
-                {{#post}}
                     <h1 class="post-title text-center hyper lighter">{{{title}}}</h1>
                     <div class="col-md-8 col-md-offset-2 post-body">
                         <section class="post-content">
                             {{content}}
                         </section>
                     </div>
-                {{/post}}
+                
             </div>
+            <footer class="post-footer">
+                <div class="row">
+                    <div class="post-share text-center bordered bordered-bottom col-md-8 col-md-offset-2">
+                        <p class="light">
+                            Share this page
+                        </p>
+                        {{> social-links-post}}
+                    </div>
+                </div>
+            </footer>
+            {{/post}}
         </article>
 
     </div>

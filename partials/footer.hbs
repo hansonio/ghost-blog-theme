@@ -1,25 +1,17 @@
 <footer id="footer"  class="text-center" style="background-image: url({{@blog.cover}})" >
     <div class="container">
-        <ul class="social-icons">
-        	<li>
-                <a data-toggle="tooltip" title="Share on Twitter" href="https://twitter.com/share?text={{encode @blog.title}}&amp;url={{url absolute="true"}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-                    <i class="icon-twitter"></i>
-                </a>
-            </li>
-            <li>
-                <a data-toggle="tooltip" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-                    <i class="icon-facebook"></i>
-                </a>
-            </li>
-            <li>
-                <a data-toggle="tooltip" title="Share on Google plus" href="https://plus.google.com/share?url={{url absolute="true"}}"             onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-                    <i class="icon-google-plus"></i>
-                </a>
-            </li>
-        </ul>
+        {{> social-links}}
         <p class="copy-text">
-        	All content copyright
-        	<a href="/">{{@blog.title}}</a> &copy; 2016 &bull; All rights reserved.
+        	Copyright &copy; 2017  <a href="/">Hanson.Io</a> &bull; That is, I placed the content in the web browser and hit publish. Enjoy, share and attribute. 
+        </p>
+        <p class="copy-text">
+            <strong>Disclaimer: </strong> Opinions expressed here are my own and may not reflect those of my clients, employers, people I work with, my family, my kids, the Pope, the President 
+             or that one guy I talked code with in the elevator last Wednesday.  
+             
+             They are definitely not the views of my dog; unless I am talking about running through the woods, chasing a tennis ball, swimming or consuming copious amounts of raw meat (preferably squirrel). In that case, she definitely agrees with me. 
+        </p>
+        <p class="copy-text">
+            I don't release "real" code to production without having somebody else TEST IT and <strong>YOU SHOULD TEST TOO</strong>. Especially any code on this site because I did once create a bug that went all the way to production. 
         </p>
     </div>
 </footer>
